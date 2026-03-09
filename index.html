@@ -1,0 +1,2608 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santin Roveda — O compromisso é com as pessoas</title>
+    <meta name="description"
+        content="Santin Roveda: gestor público com trajetória no Paraná. Estado que funciona, trânsito seguro e defesa do cidadão. #VamosTrabalhar">
+    <meta property="og:title" content="Santin Roveda — #VamosTrabalhar">
+    <meta property="og:description" content="Gestão que nasce da vida real. Conheça a trajetória de Santin Roveda.">
+    <meta property="og:image" content="assets/img/whatsapp1.png">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        :root {
+            --primary: #1B2A6B;
+            --accent: #E8602B;
+            --bg: #F5EDE0;
+            --text-blue: #1A3F9C;
+            --secondary: #2CC6D8;
+            --highlight: #F5C842;
+            --dark: #111D4A;
+            --primary-light: rgba(27, 42, 107, 0.10);
+            --accent-soft: rgba(232, 96, 43, 0.15);
+            --white: #FFFFFF;
+            --font: 'Nunito', sans-serif;
+            --radius: 1.25rem;
+            --pill: 9999px;
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: var(--font);
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: #333;
+            background: var(--bg);
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--font);
+            color: var(--primary)
+        }
+
+        h2 {
+            font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+            line-height: 1.12;
+            margin-bottom: 1rem
+        }
+
+        .section-label {
+            font-size: 0.72rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-label::before {
+            content: '';
+            display: block;
+            width: 36px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.8rem;
+            border-radius: var(--pill);
+            font-family: var(--font);
+            font-weight: 800;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s cubic-bezier(.2, 1, .3, 1), box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18)
+        }
+
+        .btn-accent {
+            background: var(--accent);
+            color: #fff
+        }
+
+        .btn-white {
+            background: #fff;
+            color: var(--primary)
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.45)
+        }
+
+        .btn-outline:hover {
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.08)
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: #fff
+        }
+
+        /* ANIMATIONS */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity 0.8s cubic-bezier(.16, 1, .3, 1), transform 0.8s cubic-bezier(.16, 1, .3, 1)
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.8s cubic-bezier(.16, 1, .3, 1), transform 0.8s cubic-bezier(.16, 1, .3, 1)
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.8s cubic-bezier(.16, 1, .3, 1), transform 0.8s cubic-bezier(.16, 1, .3, 1)
+        }
+
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.92);
+            transition: opacity 0.7s ease, transform 0.7s ease
+        }
+
+        .reveal.is-visible,
+        .reveal-left.is-visible,
+        .reveal-right.is-visible {
+            opacity: 1;
+            transform: translate(0)
+        }
+
+        .reveal-scale.is-visible {
+            opacity: 1;
+            transform: scale(1)
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-14px)
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(232, 96, 43, 0.4)
+            }
+
+            50% {
+                box-shadow: 0 0 0 24px rgba(232, 96, 43, 0)
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0)
+            }
+
+            100% {
+                transform: translateX(-50%)
+            }
+        }
+
+        @keyframes spin-slow {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes gradient-shift {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: 1rem;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            z-index: 1000
+        }
+
+        .skip-link:focus {
+            top: 1rem
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 1rem 0;
+            transition: all 0.4s ease
+        }
+
+        .navbar.scrolled {
+            background: rgba(245, 237, 224, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+            padding: 0.5rem 0
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .navbar__logo img {
+            height: 48px;
+            width: auto;
+            transition: height 0.3s
+        }
+
+        .navbar.scrolled .navbar__logo img {
+            height: 38px
+        }
+
+        .navbar__links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none
+        }
+
+        .navbar__links a {
+            font-weight: 700;
+            font-size: 0.92rem;
+            color: var(--primary);
+            transition: color 0.2s;
+            position: relative
+        }
+
+        .navbar__links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2.5px;
+            background: var(--accent);
+            transition: width 0.3s;
+            border-radius: 2px
+        }
+
+        .navbar__links a:hover {
+            color: var(--accent)
+        }
+
+        .navbar__links a:hover::after {
+            width: 100%
+        }
+
+        .navbar__cta {
+            background: var(--accent) !important;
+            color: #fff !important;
+            padding: 0.6rem 1.5rem;
+            border-radius: var(--pill);
+            font-weight: 800;
+            font-size: 0.88rem;
+            transition: transform 0.2s, box-shadow 0.2s
+        }
+
+        .navbar__cta::after {
+            display: none !important
+        }
+
+        .navbar__cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(232, 96, 43, 0.3)
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem
+        }
+
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 2px;
+            transition: 0.3s
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(17, 29, 74, 0.97);
+            z-index: 99;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem
+        }
+
+        .mobile-menu.open {
+            display: flex
+        }
+
+        .mobile-menu a {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #fff;
+            transition: color 0.2s
+        }
+
+        .mobile-menu a:hover {
+            color: var(--highlight)
+        }
+
+        .mobile-menu .close-btn {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 2.5rem;
+            cursor: pointer;
+            color: #fff
+        }
+
+        @media(max-width:768px) {
+            .navbar__links {
+                display: none
+            }
+
+            .hamburger {
+                display: flex
+            }
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: var(--dark)
+        }
+
+        .hero__bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0
+        }
+
+        .hero__bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.18;
+            filter: grayscale(20%)
+        }
+
+        .hero__bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(17, 29, 74, 0.96) 0%, rgba(27, 42, 107, 0.82) 50%, rgba(17, 29, 74, 0.65) 100%)
+        }
+
+        .hero__shapes {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none
+        }
+
+        .hero__shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.07
+        }
+
+        .hero__shape--1 {
+            width: 600px;
+            height: 600px;
+            background: var(--accent);
+            top: -150px;
+            right: -150px;
+            animation: float 8s ease-in-out infinite
+        }
+
+        .hero__shape--2 {
+            width: 350px;
+            height: 350px;
+            background: var(--secondary);
+            bottom: -80px;
+            left: 8%;
+            animation: float 6s ease-in-out infinite 1s
+        }
+
+        .hero__shape--3 {
+            width: 220px;
+            height: 220px;
+            background: var(--highlight);
+            top: 35%;
+            left: -70px;
+            animation: float 10s ease-in-out infinite 2s
+        }
+
+        .hero__shape--4 {
+            width: 160px;
+            height: 160px;
+            border: 3px solid var(--secondary);
+            top: 15%;
+            right: 35%;
+            animation: spin-slow 30s linear infinite;
+            opacity: 0.12
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 3rem;
+            align-items: center;
+            padding-top: 8rem;
+            padding-bottom: 5rem
+        }
+
+        .hero__content {
+            color: #fff
+        }
+
+        .hero__hashtag {
+            display: inline-block;
+            margin-bottom: 1.5rem
+        }
+
+        .hero__hashtag img {
+            height: 30px;
+            width: auto;
+            opacity: 0.85
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+            line-height: 1.1;
+            color: #fff;
+            margin-bottom: 1.25rem;
+            font-weight: 900
+        }
+
+        .hero h1 span {
+            color: var(--highlight);
+            position: relative
+        }
+
+        .hero h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 7px;
+            background: var(--accent);
+            opacity: 0.45;
+            border-radius: 4px
+        }
+
+        .hero__sub {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            opacity: 0.82;
+            margin-bottom: 2.5rem;
+            max-width: 500px
+        }
+
+        .hero__buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap
+        }
+
+        .hero__photo {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center
+        }
+
+        .hero__photo-wrapper {
+            position: relative
+        }
+
+        .hero__photo-wrapper>img {
+            width: 100%;
+            max-width: 520px;
+            border-radius: 2rem 2rem 2rem 0;
+            box-shadow: 0 32px 80px rgba(0, 0, 0, 0.45);
+            position: relative;
+            z-index: 2
+        }
+
+        .hero__photo-accent {
+            position: absolute;
+            bottom: -24px;
+            right: -24px;
+            width: 130px;
+            height: 130px;
+            background: var(--accent);
+            border-radius: 50%;
+            z-index: 1;
+            animation: pulse 3s ease-in-out infinite
+        }
+
+        .hero__photo-frame {
+            position: absolute;
+            top: -14px;
+            left: -14px;
+            width: calc(100% + 12px);
+            height: calc(100% + 12px);
+            border: 3px solid var(--highlight);
+            border-radius: 2.5rem 2.5rem 2.5rem 0.5rem;
+            z-index: 0;
+            opacity: 0.35
+        }
+
+        .hero__photo-badge {
+            position: absolute;
+            bottom: 20px;
+            left: -30px;
+            background: var(--white);
+            color: var(--primary);
+            padding: 0.6rem 1.2rem;
+            border-radius: var(--radius);
+            font-weight: 800;
+            font-size: 0.82rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem
+        }
+
+        .hero__photo-badge svg {
+            flex-shrink: 0
+        }
+
+        .hero__scroll {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            animation: float 2.5s ease-in-out infinite
+        }
+
+        .hero__scroll-line {
+            width: 1px;
+            height: 36px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent)
+        }
+
+        @media(max-width:768px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding-top: 7rem
+            }
+
+            .hero__photo {
+                order: -1
+            }
+
+            .hero__photo-wrapper>img {
+                max-width: 240px;
+                border-radius: 1.5rem
+            }
+
+            .hero__photo-accent {
+                width: 80px;
+                height: 80px;
+                bottom: -12px;
+                right: -12px
+            }
+
+            .hero__photo-frame,
+            .hero__photo-badge {
+                display: none
+            }
+
+            .hero__sub {
+                margin: 0 auto 2.5rem
+            }
+
+            .hero__buttons {
+                justify-content: center
+            }
+
+            .hero__scroll {
+                display: none
+            }
+        }
+
+        /* ===== TICKER ===== */
+        .ticker {
+            background: var(--accent);
+            padding: 0.8rem 0;
+            overflow: hidden;
+            white-space: nowrap
+        }
+
+        .ticker__track {
+            display: inline-flex;
+            animation: marquee 22s linear infinite
+        }
+
+        .ticker__item {
+            color: #fff;
+            font-weight: 800;
+            font-size: 0.88rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 0 2.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem
+        }
+
+        .ticker__dot {
+            width: 6px;
+            height: 6px;
+            background: var(--highlight);
+            border-radius: 50%;
+            flex-shrink: 0
+        }
+
+        /* ===== BIO ===== */
+        .bio {
+            background: var(--white);
+            padding: 4rem 1.5rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .bio::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 38%;
+            height: 100%;
+            background: var(--primary-light);
+            clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%)
+        }
+
+        .bio .container {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative
+        }
+
+        .bio__img-stack {
+            position: relative
+        }
+
+        .bio__img-main {
+            position: relative;
+            z-index: 2
+        }
+
+        .bio__img-main img {
+            border-radius: var(--radius);
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.12)
+        }
+
+        .bio__img-secondary {
+            position: absolute;
+            bottom: -28px;
+            right: -24px;
+            width: 190px;
+            z-index: 3;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+            border: 5px solid var(--white)
+        }
+
+        .bio__img-secondary img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover
+        }
+
+        .bio__accent-bar {
+            position: absolute;
+            left: -18px;
+            top: 40px;
+            width: 6px;
+            height: 110px;
+            background: var(--accent);
+            border-radius: 3px;
+            z-index: 4
+        }
+
+        .bio__accent-circle {
+            position: absolute;
+            top: -30px;
+            right: 60px;
+            width: 80px;
+            height: 80px;
+            border: 3px solid var(--secondary);
+            border-radius: 50%;
+            z-index: 0;
+            opacity: 0.3
+        }
+
+        .bio__text p {
+            margin-bottom: 0.5rem;
+            color: #555;
+            line-height: 1.45;
+            font-size: 0.95rem
+        }
+
+        .bio__quote {
+            border-left: 5px solid var(--accent);
+            padding: 1rem 1.5rem;
+            font-style: italic;
+            font-size: 1.05rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin: 1rem 0;
+            background: var(--accent-soft);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            position: relative
+        }
+
+        .bio__quote::before {
+            content: '\201C';
+            position: absolute;
+            top: -8px;
+            left: 12px;
+            font-size: 3.5rem;
+            color: var(--accent);
+            opacity: 0.3;
+            font-family: Georgia, serif;
+            line-height: 1
+        }
+
+        .bio__badges {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.6rem;
+            margin-top: 1.5rem
+        }
+
+        .bio__badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            padding: 0.6rem 1.2rem;
+            border-radius: var(--pill);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #fff
+        }
+
+        .bio__badge svg {
+            flex-shrink: 0
+        }
+
+        @media(max-width:768px) {
+            .bio .container {
+                grid-template-columns: 1fr;
+                gap: 3rem
+            }
+
+            .bio::before {
+                display: none
+            }
+
+            .bio__img-stack {
+                max-width: 380px;
+                margin: 0 auto
+            }
+
+            .bio__img-secondary {
+                width: 140px;
+                bottom: -16px;
+                right: -8px
+            }
+        }
+
+        /* ===== METRICS ===== */
+        .metrics {
+            background: var(--dark);
+            padding: 4.5rem 1.5rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .metrics::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('assets/img/bg-pattern.png') center/cover no-repeat;
+            opacity: 0.04
+        }
+
+        .metrics::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(44, 198, 216, 0.06), transparent);
+            animation: gradient-shift 8s ease infinite;
+            background-size: 200% 200%
+        }
+
+        .metrics .container {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            text-align: center
+        }
+
+        .metric {
+            padding: 2rem 1.5rem;
+            position: relative
+        }
+
+        .metric:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background: rgba(255, 255, 255, 0.12)
+        }
+
+        .metric__icon {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.06)
+        }
+
+        .metric__icon svg {
+            width: 44px;
+            height: 44px;
+            stroke: #fff;
+            fill: none;
+            stroke-width: 2
+        }
+
+        .metric__number {
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            font-weight: 900;
+            color: var(--highlight);
+            line-height: 1;
+            margin-bottom: 0.4rem
+        }
+
+        .metric__label {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.88rem;
+            font-weight: 600
+        }
+
+        @media(max-width:768px) {
+            .metrics .container {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .metric:nth-child(2)::after {
+                display: none
+            }
+        }
+
+        /* ===== PROPOSTAS ===== */
+        .propostas {
+            padding: 7rem 1.5rem;
+            background: var(--bg)
+        }
+
+        .propostas__header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3.5rem
+        }
+
+        .propostas__header .section-label {
+            justify-content: center
+        }
+
+        .propostas__header .section-label::before {
+            display: none
+        }
+
+        .propostas__header p {
+            color: #666;
+            margin-top: 0.5rem
+        }
+
+        .propostas__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem
+        }
+
+        .propostas__card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: transform 0.35s cubic-bezier(.2, 1, .3, 1), box-shadow 0.35s ease;
+            position: relative
+        }
+
+        .propostas__card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.12)
+        }
+
+        .propostas__card-img {
+            height: 210px;
+            overflow: hidden;
+            position: relative
+        }
+
+        .propostas__card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(.2, 1, .3, 1)
+        }
+
+        .propostas__card:hover .propostas__card-img img {
+            transform: scale(1.1)
+        }
+
+        .propostas__card-img::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(to top, rgba(17, 29, 74, 0.5), transparent)
+        }
+
+        .propostas__card-number {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            width: 38px;
+            height: 38px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1rem;
+            z-index: 2;
+            box-shadow: 0 4px 12px rgba(232, 96, 43, 0.4)
+        }
+
+        .propostas__card-body {
+            padding: 2rem
+        }
+
+        .propostas__card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem
+        }
+
+        .propostas__card-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round
+        }
+
+        .propostas__card:nth-child(1) .propostas__card-icon {
+            background: var(--accent-soft)
+        }
+
+        .propostas__card:nth-child(1) .propostas__card-icon svg {
+            stroke: var(--accent)
+        }
+
+        .propostas__card:nth-child(2) .propostas__card-icon {
+            background: rgba(44, 198, 216, 0.12)
+        }
+
+        .propostas__card:nth-child(2) .propostas__card-icon svg {
+            stroke: var(--secondary)
+        }
+
+        .propostas__card:nth-child(3) .propostas__card-icon {
+            background: rgba(245, 200, 66, 0.15)
+        }
+
+        .propostas__card:nth-child(3) .propostas__card-icon svg {
+            stroke: var(--highlight)
+        }
+
+        .propostas__card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.6rem;
+            color: var(--primary)
+        }
+
+        .propostas__card p {
+            color: #555;
+            font-size: 0.92rem;
+            line-height: 1.65
+        }
+
+        @media(max-width:768px) {
+            .propostas__grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* ===== PHOTO MOSAIC ===== */
+        .mosaic {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            grid-template-rows: 160px 160px;
+            gap: 4px;
+            overflow: hidden
+        }
+
+        .mosaic__item {
+            overflow: hidden;
+            position: relative
+        }
+
+        .mosaic__item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease
+        }
+
+        .mosaic__item:hover img {
+            transform: scale(1.08)
+        }
+
+        .mosaic__item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--primary);
+            opacity: 0.2;
+            transition: opacity 0.4s
+        }
+
+        .mosaic__item:hover::after {
+            opacity: 0
+        }
+
+        .mosaic__item--tall {
+            grid-row: span 2
+        }
+
+        .mosaic__item--wide {
+            grid-column: span 2
+        }
+
+        @media(max-width:768px) {
+            .mosaic {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 140px 140px
+            }
+
+            .mosaic__item--tall {
+                grid-row: span 1
+            }
+
+            .mosaic__item:nth-child(n+5) {
+                display: none
+            }
+        }
+
+        /* ===== ESTADO ===== */
+        .estado {
+            background: var(--white);
+            padding: 7rem 1.5rem
+        }
+
+        .estado .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: flex-start
+        }
+
+        .estado__visual {
+            position: sticky;
+            top: 120px;
+        }
+
+        .estado__visual-img {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1)
+        }
+
+        .estado__visual-img img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover
+        }
+
+        .estado__visual-badge {
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: #fff;
+            padding: 0.85rem 2rem;
+            border-radius: var(--pill);
+            font-weight: 800;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            box-shadow: 0 8px 28px rgba(232, 96, 43, 0.35)
+        }
+
+        .estado__visual-accent {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 80px;
+            height: 80px;
+            border: 3px solid var(--secondary);
+            border-radius: 50%;
+            opacity: 0.2
+        }
+
+        .estado__list {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem
+        }
+
+        .estado__item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            padding: 1.25rem 1.5rem;
+            background: var(--bg);
+            border-radius: 14px;
+            border-left: 4px solid transparent;
+            transition: all 0.25s ease
+        }
+
+        .estado__item:hover {
+            transform: translateX(6px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+            border-left-color: var(--secondary)
+        }
+
+        .estado__item-icon {
+            width: 42px;
+            height: 42px;
+            background: var(--secondary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0
+        }
+
+        .estado__item-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke: #fff;
+            fill: none;
+            stroke-width: 2.5
+        }
+
+        .estado__item strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 0.15rem;
+            font-size: 1rem
+        }
+
+        .estado__item span {
+            font-size: 0.88rem;
+            color: #777
+        }
+
+        @media(max-width:768px) {
+            .estado .container {
+                grid-template-columns: 1fr
+            }
+
+            .estado__visual {
+                max-width: 480px;
+                margin: 0 auto
+            }
+        }
+
+        /* ===== TRANSITO ===== */
+        .transito {
+            position: relative;
+            padding: 8rem 1.5rem;
+            overflow: hidden
+        }
+
+        .transito__bg {
+            position: absolute;
+            inset: 0
+        }
+
+        .transito__bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .transito__bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(27, 42, 107, 0.93) 0%, rgba(34, 58, 143, 0.87) 100%)
+        }
+
+        .transito .container {
+            position: relative;
+            z-index: 2
+        }
+
+        .transito__content {
+            max-width: 760px;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff
+        }
+
+        .transito__content .section-label {
+            color: var(--highlight);
+            justify-content: center
+        }
+
+        .transito__content .section-label::before {
+            background: var(--highlight)
+        }
+
+        .transito h2,
+        .transito p {
+            color: #fff
+        }
+
+        .transito__highlight {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin: 2rem 0;
+            font-weight: 600;
+            opacity: 0.92
+        }
+
+        .transito__tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 2.5rem
+        }
+
+        .transito__tag {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.8rem 2rem;
+            border-radius: var(--pill);
+            font-weight: 700;
+            font-size: 0.92rem;
+            color: #fff;
+            backdrop-filter: blur(6px);
+            transition: all 0.3s
+        }
+
+        .transito__tag:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateY(-2px)
+        }
+
+        .transito__bottom {
+            margin-top: 2.5rem;
+            font-weight: 700;
+            opacity: 0.85;
+            font-size: 1.05rem
+        }
+
+        .transito__sinaliza {
+            margin-top: 2.5rem
+        }
+
+        .transito__sinaliza img {
+            height: 44px;
+            width: auto;
+            margin: 0 auto;
+            opacity: 0.75
+        }
+
+        /* ===== DEFESA ===== */
+        .defesa {
+            background: var(--bg);
+            padding: 7rem 1.5rem
+        }
+
+        .defesa .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center
+        }
+
+        .defesa__visual {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            border-radius: var(--radius);
+            padding: 3.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden
+        }
+
+        .defesa__visual::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 220px;
+            height: 220px;
+            background: var(--accent);
+            border-radius: 50%;
+            opacity: 0.08
+        }
+
+        .defesa__visual::after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            left: -40px;
+            width: 180px;
+            height: 180px;
+            background: var(--highlight);
+            border-radius: 50%;
+            opacity: 0.06
+        }
+
+        .defesa__visual blockquote {
+            font-size: 1.55rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1
+        }
+
+        .defesa__visual blockquote::before {
+            content: '\201C';
+            font-size: 5rem;
+            color: var(--highlight);
+            position: absolute;
+            top: -28px;
+            left: -8px;
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1
+        }
+
+        .defesa__visual cite {
+            font-size: 0.92rem;
+            color: var(--highlight);
+            font-style: normal;
+            font-weight: 700;
+            position: relative;
+            z-index: 1
+        }
+
+        .defesa__text p {
+            color: #555;
+            margin-bottom: 1rem
+        }
+
+        .defesa__highlight {
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 1.5rem;
+            font-size: 1.05rem;
+            padding: 1.5rem;
+            background: var(--primary-light);
+            border-radius: 14px;
+            border-left: 4px solid var(--primary)
+        }
+
+        @media(max-width:768px) {
+            .defesa .container {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* ===== VISION ===== */
+        .vision {
+            background: var(--white);
+            padding: 7rem 1.5rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .vision::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--accent), var(--highlight), var(--secondary), var(--primary))
+        }
+
+        .vision__header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3rem
+        }
+
+        .vision__header .section-label {
+            justify-content: center
+        }
+
+        .vision__header .section-label::before {
+            display: none
+        }
+
+        .vision__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem
+        }
+
+        .vision__card {
+            background: var(--bg);
+            border-radius: var(--radius);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease
+        }
+
+        .vision__card:hover {
+            transform: translateY(-6px)
+        }
+
+        .vision__card-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .vision__card:nth-child(1) .vision__card-icon {
+            background: var(--accent-soft)
+        }
+
+        .vision__card:nth-child(2) .vision__card-icon {
+            background: rgba(44, 198, 216, 0.12)
+        }
+
+        .vision__card:nth-child(3) .vision__card-icon {
+            background: rgba(245, 200, 66, 0.15)
+        }
+
+        .vision__card-icon svg {
+            width: 26px;
+            height: 26px;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none
+        }
+
+        .vision__card:nth-child(1) .vision__card-icon svg {
+            stroke: var(--accent)
+        }
+
+        .vision__card:nth-child(2) .vision__card-icon svg {
+            stroke: var(--secondary)
+        }
+
+        .vision__card:nth-child(3) .vision__card-icon svg {
+            stroke: var(--highlight)
+        }
+
+        .vision__card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.7rem
+        }
+
+        .vision__card p {
+            color: #555;
+            font-size: 0.92rem;
+            line-height: 1.6
+        }
+
+        .vision__card-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px
+        }
+
+        .vision__card:nth-child(1) .vision__card-bar {
+            background: var(--accent)
+        }
+
+        .vision__card:nth-child(2) .vision__card-bar {
+            background: var(--secondary)
+        }
+
+        .vision__card:nth-child(3) .vision__card-bar {
+            background: var(--highlight)
+        }
+
+        @media(max-width:768px) {
+            .vision__grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* ===== COALITION ===== */
+        .coalition {
+            background: var(--dark);
+            padding: 4.5rem 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden
+        }
+
+        .coalition::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(44, 198, 216, 0.06), transparent)
+        }
+
+        .coalition .container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap
+        }
+
+        .coalition__logo img {
+            height: 180px;
+            max-width: 100%;
+            width: auto;
+            border-radius: 14px
+        }
+
+        .coalition__text {
+            color: #fff;
+            max-width: 480px;
+            text-align: left
+        }
+
+        .coalition__text h3 {
+            color: var(--highlight);
+            font-size: 1.45rem;
+            margin-bottom: 0.4rem
+        }
+
+        .coalition__text p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.92rem
+        }
+
+        /* ===== CTA ===== */
+        .cta-section {
+            position: relative;
+            padding: 8rem 1.5rem;
+            overflow: hidden
+        }
+
+        .cta-section__bg {
+            position: absolute;
+            inset: 0
+        }
+
+        .cta-section__bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .cta-section__bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(232, 96, 43, 0.93) 0%, rgba(212, 80, 30, 0.95) 100%)
+        }
+
+        .cta-section .container {
+            position: relative;
+            z-index: 2;
+            text-align: center
+        }
+
+        .cta-section h2 {
+            color: #fff;
+            font-size: clamp(2rem, 4.5vw, 3rem)
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.88);
+            margin-bottom: 2.5rem;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.1rem
+        }
+
+        .cta-section__buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        .cta-section .btn {
+            font-size: 1rem;
+            padding: 0.8rem 2rem
+        }
+
+        .cta-section__hashtag {
+            margin-top: 3rem
+        }
+
+        .cta-section__hashtag img {
+            height: 36px;
+            width: auto;
+            margin: 0 auto;
+            opacity: 0.8
+        }
+
+        /* ===== CONTATO ===== */
+        .contato {
+            background: var(--bg);
+            padding: 7rem 1.5rem
+        }
+
+        .contato .container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: start;
+            max-width: 1000px
+        }
+
+        .contato__info p {
+            color: #555;
+            margin-bottom: 1.5rem
+        }
+
+        .contato__channels {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem
+        }
+
+        .contato__channel {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            background: var(--white);
+            border-radius: 14px;
+            transition: transform 0.2s
+        }
+
+        .contato__channel:hover {
+            transform: translateX(4px)
+        }
+
+        .contato__channel-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0
+        }
+
+        .contato__channel-icon svg {
+            width: 20px;
+            height: 20px
+        }
+
+        .contato__channel-icon--wa {
+            background: #25D366
+        }
+
+        .contato__channel-icon--wa svg {
+            fill: #fff
+        }
+
+        .contato__channel-icon--ig {
+            background: var(--accent)
+        }
+
+        .contato__channel-icon--ig svg {
+            stroke: #fff;
+            fill: none;
+            stroke-width: 2
+        }
+
+        .contato__channel strong {
+            color: var(--primary);
+            display: block;
+            font-size: 0.92rem
+        }
+
+        .contato__channel span {
+            color: #999;
+            font-size: 0.82rem
+        }
+
+        .contato form {
+            display: grid;
+            gap: 0.85rem;
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05)
+        }
+
+        .contato input,
+        .contato textarea {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            border: 2px solid #e8e2d8;
+            border-radius: 14px;
+            font-family: var(--font);
+            font-size: 0.95rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            background: #faf8f4
+        }
+
+        .contato input:focus,
+        .contato textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px var(--primary-light);
+            background: #fff
+        }
+
+        .contato .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.85rem
+        }
+
+        @media(max-width:768px) {
+            .contato .container {
+                grid-template-columns: 1fr
+            }
+
+            .contato .form-row {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--dark);
+            color: rgba(255, 255, 255, 0.6);
+            padding: 4rem 1.5rem 2rem
+        }
+
+        .footer .container {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            gap: 3rem;
+            align-items: start
+        }
+
+        .footer__brand img {
+            height: 42px;
+            margin-bottom: 1rem;
+            opacity: 0.85
+        }
+
+        .footer__brand p {
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.4)
+        }
+
+        .footer__nav h4 {
+            color: var(--highlight);
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem
+        }
+
+        .footer__nav ul {
+            list-style: none
+        }
+
+        .footer__nav li {
+            margin-bottom: 0.5rem
+        }
+
+        .footer__nav a {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.88rem;
+            transition: color 0.2s
+        }
+
+        .footer__nav a:hover {
+            color: #fff
+        }
+
+        .footer__social-col h4 {
+            color: var(--highlight);
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem
+        }
+
+        .footer__social {
+            display: flex;
+            gap: 0.6rem;
+            margin-bottom: 1.5rem
+        }
+
+        .footer__social a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s
+        }
+
+        .footer__social a:hover {
+            background: var(--accent);
+            transform: translateY(-3px)
+        }
+
+        .footer__social svg {
+            width: 18px;
+            height: 18px;
+            fill: #fff
+        }
+
+        .footer__bottom {
+            grid-column: 1/-1;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem
+        }
+
+        .footer__legal {
+            font-size: 0.76rem;
+            color: rgba(255, 255, 255, 0.3);
+            line-height: 1.6
+        }
+
+        .footer__slogan {
+            font-weight: 800;
+            font-size: 0.95rem;
+            color: var(--highlight)
+        }
+
+        @media(max-width:768px) {
+            .footer .container {
+                grid-template-columns: 1fr;
+                text-align: center
+            }
+
+            .footer__social {
+                justify-content: center
+            }
+
+            .footer__bottom {
+                justify-content: center;
+                text-align: center
+            }
+
+            .footer__brand img {
+                margin: 0 auto 1rem
+            }
+        }
+
+        /* BACK TO TOP */
+        .back-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 48px;
+            height: 48px;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 50;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s;
+            box-shadow: 0 6px 20px rgba(232, 96, 43, 0.35)
+        }
+
+        .back-top.visible {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        .back-top:hover {
+            background: var(--primary);
+            transform: translateY(-3px)
+        }
+
+        .back-top svg {
+            width: 20px;
+            height: 20px;
+            stroke: #fff;
+            fill: none;
+            stroke-width: 2.5
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Ir para conteúdo principal</a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Menu principal">
+        <div class="container">
+            <a href="#" class="navbar__logo"><img src="assets/img/logo.png" alt="Santin Roveda" loading="eager"></a>
+            <ul class="navbar__links">
+                <li><a href="#quem-e-santin">Quem Sou</a></li>
+                <li><a href="#propostas">Propostas</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a href="#contato" class="navbar__cta">Fale Comigo</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Abrir menu"
+                onclick="document.getElementById('mobileMenu').classList.add('open')">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" aria-label="Fechar menu"
+            onclick="this.parentElement.classList.remove('open')">&times;</button>
+        <a href="#quem-e-santin" onclick="this.parentElement.classList.remove('open')">Quem Sou</a>
+        <a href="#propostas" onclick="this.parentElement.classList.remove('open')">Propostas</a>
+        <a href="#trajetoria" onclick="this.parentElement.classList.remove('open')">Trajetória</a>
+        <a href="#contato" onclick="this.parentElement.classList.remove('open')">Fale Comigo</a>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg"><img src="assets/img/posse2.jpg" alt="" loading="eager"></div>
+        <div class="hero__shapes">
+            <div class="hero__shape hero__shape--1"></div>
+            <div class="hero__shape hero__shape--2"></div>
+            <div class="hero__shape hero__shape--3"></div>
+            <div class="hero__shape hero__shape--4"></div>
+        </div>
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__hashtag"><img src="assets/img/hashtag-white.png" alt="#VamosTrabalhar"
+                        loading="eager"></div>
+                <h1>O compromisso é com as <span>pessoas.</span></h1>
+                <p class="hero__sub">Gestor público com trajetória construída no interior do Paraná, resolvendo
+                    problemas reais e organizando o Estado para funcionar para quem está na ponta.</p>
+                <div class="hero__buttons">
+                    <a href="#quem-e-santin" class="btn btn-accent">Conheça a trajetória</a>
+                    <a href="#contato" class="btn btn-outline">Fale comigo</a>
+                </div>
+            </div>
+            <div class="hero__photo">
+                <div class="hero__photo-wrapper">
+                    <div class="hero__photo-frame"></div>
+                    <img src="assets/img/whatsapp1.png" alt="Santin Roveda" loading="eager" width="420" height="540">
+                    <div class="hero__photo-accent"></div>
+                    <div class="hero__photo-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        Presidente do Detran-PR
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll"><span>Conheça mais</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+            <span class="ticker__item"><span class="ticker__dot"></span>Estado que Funciona</span>
+            <span class="ticker__item"><span class="ticker__dot"></span>Trânsito é Vida Real</span>
+            <span class="ticker__item"><span class="ticker__dot"></span>Defesa do Cidadão</span>
+            <span class="ticker__item"><span class="ticker__dot"></span>#VamosTrabalhar</span>
+            <span class="ticker__item"><span class="ticker__dot"></span>Juntos pelo Paraná</span>
+            <span class="ticker__item"><span class="ticker__dot"></span>Estado que Funciona</span>
+            <span class="ticker__item"><span class="ticker__dot"></span>Trânsito é Vida Real</span>
+            <span class="ticker__item"><span class="ticker__dot"></span>Defesa do Cidadão</span>
+            <span class="ticker__item"><span class="ticker__dot"></span>#VamosTrabalhar</span>
+            <span class="ticker__item"><span class="ticker__dot"></span>Juntos pelo Paraná</span>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <!-- ===== BIO ===== -->
+        <section class="bio" id="quem-e-santin">
+            <div class="container">
+                <div class="bio__img-stack reveal-left">
+                    <div class="bio__accent-bar"></div>
+                    <div class="bio__accent-circle"></div>
+                    <div class="bio__img-main">
+                        <img src="assets/img/bio.jpg" alt="Santin Roveda em ação" loading="lazy" width="520"
+                            height="600">
+                    </div>
+                    <div class="bio__img-secondary">
+                        <img src="assets/img/posse3.jpg" alt="Santin com a família" loading="lazy">
+                    </div>
+                </div>
+                <div class="bio__text reveal-right">
+                    <p class="section-label">Quem é Santin</p>
+                    <h2>Gestão que nasce da vida real</h2>
+                    <p>Santin Roveda é do interior. Cresceu entendendo como as decisões do Estado impactam diretamente
+                        quem está em casa, quem trabalha, quem depende de um serviço público que funcione.</p>
+                    <p>Foi prefeito de União da Vitória, atuou no primeiro escalão do Governo do Paraná e presidiu o
+                        Detran-PR.</p>
+                    <blockquote class="bio__quote">O poder público existe para facilitar a vida das pessoas, não para
+                        complicar.</blockquote>
+                    <p>Ao longo da sua trajetória, enfrentou desafios concretos: reorganização administrativa,
+                        modernização de serviços, combate a irregularidades e melhoria no atendimento ao cidadão.</p>
+                    <div class="bio__badges">
+                        <span class="bio__badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="#fff" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Prefeito de União da Vitória</span>
+                        <span class="bio__badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="#fff" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Governo do Paraná</span>
+                        <span class="bio__badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="#fff" stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Presidente do Detran-PR</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== METRICS ===== -->
+        <section class="metrics">
+            <div class="container">
+                <div class="metric reveal-scale">
+                    <div class="metric__icon"><svg viewBox="0 0 24 24">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg></div>
+                    <div class="metric__number">Prefeito</div>
+                    <div class="metric__label">de União da Vitória</div>
+                </div>
+                <div class="metric reveal-scale">
+                    <div class="metric__icon"><svg viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg></div>
+                    <div class="metric__number">1&ordm; Escalão</div>
+                    <div class="metric__label">Governo do Paraná</div>
+                </div>
+                <div class="metric reveal-scale">
+                    <div class="metric__icon"><svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg></div>
+                    <div class="metric__number">Detran-PR</div>
+                    <div class="metric__label">Presidente</div>
+                </div>
+                <div class="metric reveal-scale">
+                    <div class="metric__icon"><svg viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg></div>
+                    <div class="metric__number">Sinaliza PR</div>
+                    <div class="metric__label">Programa Sinaliza Paraná</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROPOSTAS ===== -->
+        <section class="propostas" id="propostas">
+            <div class="container">
+                <div class="propostas__header reveal">
+                    <p class="section-label">O que defendo</p>
+                    <h2>Compromissos com o Paraná</h2>
+                    <p>Três bandeiras que traduzem o compromisso com a gestão pública eficiente e humana.</p>
+                </div>
+                <div class="propostas__grid">
+                    <div class="propostas__card reveal">
+                        <div class="propostas__card-img">
+                            <span class="propostas__card-number">1</span>
+                            <img src="assets/img/posse4.jpg" alt="Estado que Funciona" loading="lazy">
+                        </div>
+                        <div class="propostas__card-body">
+                            <div class="propostas__card-icon"><svg viewBox="0 0 24 24">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                                    <line x1="8" y1="21" x2="16" y2="21" />
+                                    <line x1="12" y1="17" x2="12" y2="21" />
+                                </svg></div>
+                            <h3>Estado que Funciona</h3>
+                            <p>Regra clara, serviço ágil, menos burocracia, mais solução. Organizar o serviço público
+                                não é discurso técnico — é respeito com quem precisa dele.</p>
+                        </div>
+                    </div>
+                    <div class="propostas__card reveal">
+                        <div class="propostas__card-img">
+                            <span class="propostas__card-number">2</span>
+                            <img src="assets/img/bio.jpg" alt="Trânsito é Vida Real" loading="lazy">
+                        </div>
+                        <div class="propostas__card-body">
+                            <div class="propostas__card-icon"><svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg></div>
+                            <h3>Trânsito é Vida Real</h3>
+                            <p>Modernizar serviços, orientar com clareza e agir com firmeza contra irregularidades.
+                                Quando o trânsito é organizado, menos acidentes acontecem.</p>
+                        </div>
+                    </div>
+                    <div class="propostas__card reveal">
+                        <div class="propostas__card-img">
+                            <span class="propostas__card-number">3</span>
+                            <img src="assets/img/entrevista.jpg" alt="Defesa do Cidadão" loading="lazy">
+                        </div>
+                        <div class="propostas__card-body">
+                            <div class="propostas__card-icon"><svg viewBox="0 0 24 24">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg></div>
+                            <h3>Defesa do Cidadão</h3>
+                            <p>Orientação clara, direta e prática para que o cidadão conheça seus direitos. Informar é
+                                dar segurança, orientar é dar autonomia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PHOTO MOSAIC ===== -->
+        <div class="mosaic">
+            <div class="mosaic__item mosaic__item--tall"><img src="assets/img/whatsapp1.png" alt="Santin discursando"
+                    loading="lazy"></div>
+            <div class="mosaic__item"><img src="assets/img/posse3.jpg" alt="Santin com a família" loading="lazy"></div>
+            <div class="mosaic__item"><img src="assets/img/entrevista.jpg" alt="Santin na imprensa" loading="lazy">
+            </div>
+            <div class="mosaic__item mosaic__item--tall"><img src="assets/img/hero.jpg" alt="Santin no palco"
+                    loading="lazy"></div>
+            <div class="mosaic__item"><img src="assets/img/posse1.jpg" alt="Cerimônia Detran-PR" loading="lazy"></div>
+            <div class="mosaic__item"><img src="assets/img/posse4.jpg" alt="Santin com autoridades" loading="lazy">
+            </div>
+        </div>
+
+        <!-- ===== ESTADO ===== -->
+        <section class="estado" id="trajetoria">
+            <div class="container">
+                <div class="estado__visual reveal-left">
+                    <div class="estado__visual-accent"></div>
+                    <div class="estado__visual-img">
+                        <img src="assets/img/posse4.jpg" alt="Santin Roveda em cerimônia" loading="lazy">
+                    </div>
+                    <div class="estado__visual-badge">Gestão com Resultado</div>
+                </div>
+                <div class="reveal-right">
+                    <p class="section-label">Princípios</p>
+                    <h2>Quando o Estado funciona, a vida anda</h2>
+                    <p style="color:#555;margin-bottom:1.5rem">O que mais prejudica o cidadão não é a falta de regra. É
+                        a falta de organização.</p>
+                    <div class="estado__list">
+                        <div class="estado__item">
+                            <div class="estado__item-icon"><svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <div><strong>Regra clara</strong><span>Normas objetivas que o cidadão entende</span></div>
+                        </div>
+                        <div class="estado__item">
+                            <div class="estado__item-icon"><svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <div><strong>Serviço ágil</strong><span>Menos fila, menos espera, mais solução</span></div>
+                        </div>
+                        <div class="estado__item">
+                            <div class="estado__item-icon"><svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <div><strong>Menos burocracia</strong><span>Processos simples para quem precisa</span></div>
+                        </div>
+                        <div class="estado__item">
+                            <div class="estado__item-icon"><svg viewBox="0 0 24 24">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <div><strong>Mais solução</strong><span>Foco no resultado para o cidadão</span></div>
+                        </div>
+                    </div>
+                    <p style="color:#444;margin-top:1.5rem;font-weight:700;font-size:1.02rem">Se o Estado é lento, quem
+                        paga é o trabalhador. Se o sistema é confuso, quem sofre é a família.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TRANSITO ===== -->
+        <section class="transito">
+            <div class="transito__bg"><img src="assets/img/posse1.jpg" alt="" loading="lazy"></div>
+            <div class="container">
+                <div class="transito__content reveal">
+                    <p class="section-label">Trânsito é Vida Real</p>
+                    <h2>Trânsito não é multa. É cuidado.</h2>
+                    <p class="transito__highlight">É pai levando filho na escola. É trabalhador voltando para casa. É
+                        família na estrada.</p>
+                    <p>Modernizar serviços, orientar com clareza e agir com firmeza contra irregularidades não é
+                        punição. É prevenção.</p>
+                    <div class="transito__tags">
+                        <span class="transito__tag">Modernização</span>
+                        <span class="transito__tag">Orientação</span>
+                        <span class="transito__tag">Prevenção</span>
+                        <span class="transito__tag">Segurança</span>
+                    </div>
+                    <p class="transito__bottom">Estado que funciona também protege.</p>
+                    <div class="transito__sinaliza"><img src="assets/img/sinaliza.png" alt="Programa Sinaliza Paraná"
+                            loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DEFESA ===== -->
+        <section class="defesa">
+            <div class="container">
+                <div class="defesa__visual reveal-left">
+                    <blockquote>Informar é dar segurança. Orientar é dar autonomia.</blockquote>
+                    <cite>— Santin Roveda</cite>
+                </div>
+                <div class="defesa__text reveal-right">
+                    <p class="section-label">Defesa do Cidadão</p>
+                    <h2>Ninguém pode ser enganado por falta de informação</h2>
+                    <p>O cidadão precisa conhecer seus direitos. Não com linguagem técnica. Mas com orientação clara,
+                        direta e prática.</p>
+                    <p>Defender o consumidor é proteger quem trabalha duro e não pode ser prejudicado por abuso, fraude
+                        ou desrespeito.</p>
+                    <div class="defesa__highlight">O Estado precisa estar do lado de quem está certo.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== VISION ===== -->
+        <section class="vision">
+            <div class="container">
+                <div class="vision__header reveal">
+                    <p class="section-label">Valores</p>
+                    <h2>O que move Santin Roveda</h2>
+                </div>
+                <div class="vision__grid">
+                    <div class="vision__card reveal">
+                        <div class="vision__card-icon"><svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg></div>
+                        <h3>Visão de Brasil Real</h3>
+                        <p>O Brasil real não aparece só nas capitais. Está nas cidades médias, no interior, nas pessoas
+                            que precisam ser ouvidas. Política não é briga — é articulação.</p>
+                        <div class="vision__card-bar"></div>
+                    </div>
+                    <div class="vision__card reveal">
+                        <div class="vision__card-icon"><svg viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg></div>
+                        <h3>Liderança que Articula</h3>
+                        <p>Menos confronto, mais resultado. Política que conecta, aproxima lideranças, constrói consenso
+                            e resolve. O cidadão não quer disputa — quer solução.</p>
+                        <div class="vision__card-bar"></div>
+                    </div>
+                    <div class="vision__card reveal">
+                        <div class="vision__card-icon"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg></div>
+                        <h3>Humano e Real</h3>
+                        <p>Pai, amigo, alguém que vive a mesma realidade de milhares de famílias paranaenses. Entende o
+                            peso do custo de vida e a frustração quando o Estado falha.</p>
+                        <div class="vision__card-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== COALITION ===== -->
+        <section class="coalition">
+            <div class="container reveal">
+                <div class="coalition__logo"><img src="assets/img/juntos-pr.png" alt="JUNTOS PELO PR" loading="lazy">
+                </div>
+                <div class="coalition__text">
+                    <h3>Juntos pelo Paraná</h3>
+                    <p>Unidos em paz, é possível fazer mais. Problemas não se resolvem com conflito — se resolvem com
+                        diálogo, organização e responsabilidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="cta-section">
+            <div class="cta-section__bg"><img src="assets/img/hero.jpg" alt="" loading="lazy"></div>
+            <div class="container reveal">
+                <h2>Vamos trabalhar juntos pelo Paraná</h2>
+                <p>O compromisso é com as pessoas, não com o cargo. Faça parte dessa construção.</p>
+                <div class="cta-section__buttons">
+                    <a href="https://wa.me/55___________" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 2.112.549 4.094 1.504 5.818L0 24l6.335-1.652A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82a9.78 9.78 0 0 1-5.283-1.545l-.38-.225-3.94 1.03 1.052-3.838-.248-.395A9.773 9.773 0 0 1 2.18 12c0-5.414 4.406-9.82 9.82-9.82 5.414 0 9.82 4.406 9.82 9.82 0 5.414-4.406 9.82-9.82 9.82z" />
+                        </svg>
+                        Fale pelo WhatsApp
+                    </a>
+                    <a href="#contato" class="btn btn-outline">Enviar mensagem</a>
+                </div>
+                <div class="cta-section__hashtag"><img src="assets/img/hashtag-white.png" alt="#VamosTrabalhar"
+                        loading="lazy"></div>
+            </div>
+        </section>
+
+        <!-- ===== CONTATO ===== -->
+        <section class="contato" id="contato">
+            <div class="container">
+                <div class="contato__info reveal-left">
+                    <p class="section-label">Contato</p>
+                    <h2>A política precisa ouvir</h2>
+                    <p>O diálogo é parte do trabalho. Sugestões, demandas e ideias ajudam a construir soluções melhores.
+                    </p>
+                    <div class="contato__channels">
+                        <a href="https://wa.me/55___________" class="contato__channel" target="_blank" rel="noopener">
+                            <div class="contato__channel-icon contato__channel-icon--wa">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                                </svg>
+                            </div>
+                            <div><strong>WhatsApp</strong><span>Resposta rápida</span></div>
+                        </a>
+                        <a href="#" class="contato__channel">
+                            <div class="contato__channel-icon contato__channel-icon--ig">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                                    <circle cx="12" cy="12" r="5" />
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="#fff" stroke="none" />
+                                </svg>
+                            </div>
+                            <div><strong>Instagram</strong><span>Acompanhe o dia a dia</span></div>
+                        </a>
+                    </div>
+                </div>
+                <form action="#" method="POST" class="reveal-right">
+                    <div class="form-row">
+                        <input type="text" name="nome" placeholder="Seu nome" required aria-label="Nome">
+                        <input type="email" name="email" placeholder="Seu e-mail" required aria-label="E-mail">
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" name="telefone" placeholder="Telefone" aria-label="Telefone">
+                        <input type="text" name="cidade" placeholder="Cidade" aria-label="Cidade">
+                    </div>
+                    <textarea name="mensagem" rows="4" placeholder="Sua mensagem ou sugestão"
+                        aria-label="Mensagem"></textarea>
+                    <button type="submit" class="btn btn-accent" style="justify-self:center;width:100%">Enviar
+                        mensagem</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__brand">
+                <img src="assets/img/logo-white.png" alt="Santin Roveda">
+                <p>Gestão pública com trajetória construída no interior do Paraná. Compromisso com as pessoas.</p>
+            </div>
+            <div class="footer__nav">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#quem-e-santin">Quem Sou</a></li>
+                    <li><a href="#propostas">Propostas</a></li>
+                    <li><a href="#trajetoria">Trajetória</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer__social-col">
+                <h4>Redes Sociais</h4>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="#fff"
+                                stroke-width="2" />
+                            <circle cx="12" cy="12" r="5" fill="none" stroke="#fff" stroke-width="2" />
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="#fff" />
+                        </svg></a>
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="#fff" />
+                        </svg></a>
+                    <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"
+                                fill="#fff" />
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#111D4A" />
+                        </svg></a>
+                </div>
+                <img src="assets/img/hashtag-color.png" alt="#VamosTrabalhar"
+                    style="height:26px;width:auto;opacity:0.65">
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__legal">Propaganda eleitoral — CNPJ XX.XXX.XXX/0001-XX — Responsável: A
+                    definir<br>JUNTOS PELO PR</p>
+                <p class="footer__slogan">#VamosTrabalhar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-top" id="backTop" aria-label="Voltar ao topo"
+        onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <svg viewBox="0 0 24 24">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </button>
+
+    <script>
+        var navbar = document.getElementById('navbar'), backTop = document.getElementById('backTop');
+        window.addEventListener('scroll', function () {
+            var s = window.scrollY;
+            navbar.classList.toggle('scrolled', s > 60);
+            backTop.classList.toggle('visible', s > 500);
+        });
+
+        var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add('is-visible') });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(function (el) { obs.observe(el) });
+
+        document.querySelectorAll('.propostas__card,.vision__card,.metric').forEach(function (c, i) { c.style.transitionDelay = (i % 3) * 0.15 + 's' });
+
+        window.addEventListener('scroll', function () {
+            var y = window.scrollY;
+            document.querySelectorAll('.hero__shape').forEach(function (s, i) { s.style.transform = 'translateY(' + y * (i + 1) * 0.025 + 'px)' });
+        });
+    </script>
+</body>
+
+</html>
